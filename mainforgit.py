@@ -1,4 +1,6 @@
 
+#you can only change the "path" , then code going to work
+
 import time
 import pandas as pd
 from sklearn import model_selection
@@ -252,7 +254,7 @@ class cWeibo:
 if __name__ == "__main__":
     start = time.time()
 
-    wb = cWeibo('D:\\xxx\\weibo')
+    wb = cWeibo(path) # change this part
     wb.importData()  # import data
     wb.ETL()  # feature extracting
     wb.callItemCF()  # recommendation algorithm
